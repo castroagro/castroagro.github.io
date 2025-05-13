@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff; color: #222; margin: 0; padding: 0; }
+    header, footer { background: #006400; color: white; padding: 10px 20px; }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; }
+    .container { padding: 20px; max-width: 900px; margin: auto; }
+    h1 { color: #006400; }
+    ul { padding-left: 20px; }
+    .formulario { margin-top: 30px; border-top: 1px solid #ccc; padding-top: 20px; }
+    label { display: block; margin-top: 10px; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
+    .botao-whats { background: #25D366; color: white; border: none; padding: 10px 20px; margin-top: 15px; cursor: pointer; font-size: 16px; border-radius: 5px; }
+
+    /* Botão flutuante de WhatsApp */
+    .whatsapp-fixo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .whatsapp-fixo img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    @media (max-width: 600px) {
+      nav { flex-direction: column; }
+      .container { padding: 10px; }
+    }
+  </style>
+
+  <title>Contato - Castro'Agro</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff; color: #222; margin: 0; padding: 0; }
+    header, footer { background: #006400; color: white; padding: 10px 20px; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; }
+    .container { padding: 20px; max-width: 900px; margin: auto; }
+    h1 { color: #006400; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="servicos_castroagro.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Fale Conosco</h1><p>📞 WhatsApp: (42) 98871-2806</p><p>📧 Email: leandrofietkoski@hotmail.com</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Castro’Agro. Soluções tecnológicas para a pecuária.</p>
+  </footer>
+
+<a class="whatsapp-fixo" href="https://wa.me/5542988712806" target="_blank">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp"> WhatsApp
+</a>
+
+</body>
+</html>
