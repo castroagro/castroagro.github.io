@@ -5,23 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Serviços - Castro'Agro</title>
   <style>
-    body {{ font-family: Arial, sans-serif; background: #eaf7ea; color: #222; margin: 0; padding: 0; }}
-    header {{
-      background: #006400; color: white;
-      display: flex; align-items: center;
-      justify-content: space-between; flex-wrap: wrap;
-      padding: 10px 20px;
+    body {{
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+      margin: 0;
+      padding: 0;
     }}
-    .logo-area {{ display: flex; align-items: center; gap: 10px; }}
-    .logo-area img {{ height: 24px; max-height: 24px; width: auto; }}
-    .logo-area span {{ font-size: 20px; font-weight: bold; }}
-    nav {{ display: flex; gap: 15px; flex-wrap: wrap; }}
-    nav a {{ color: white; text-decoration: none; font-weight: bold; }}
-    .container {{ padding: 20px; max-width: 900px; margin: auto; }}
-    h1 {{ color: #006400; }}
+    header {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      background: #ffffff;
+      border-bottom: 1px solid #ccc;
+    }}
+    .logo-area {{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }}
+    .logo-area img {{
+      height: 32px;
+      width: auto;
+    }}
+    .logo-area span {{
+      font-size: 18px;
+      font-weight: bold;
+      color: #006400;
+    }}
+    nav {{
+      display: flex;
+      gap: 20px;
+      font-size: 16px;
+    }}
+    nav a {{
+      color: #006400;
+      text-decoration: none;
+      font-weight: bold;
+    }}
+    .container {{
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }}
+    h1 {{
+      color: #006400;
+    }}
+    footer {{
+      background: #006400;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }}
     .formulario label {{ display: block; margin-top: 10px; }}
     input, textarea, select {{ width: 100%; padding: 8px; margin-top: 5px; }}
-    .botao-whats {{ background: #25D366; color: white; border: none; padding: 10px 20px; margin-top: 15px; cursor: pointer; font-size: 16px; border-radius: 5px; }}
+    .botao-whats {{
+      background: #25D366; color: white;
+      border: none; padding: 10px 20px; margin-top: 15px;
+      cursor: pointer; font-size: 16px; border-radius: 5px;
+    }}
     .whatsapp-fixo {{
       position: fixed; bottom: 20px; right: 20px;
       background-color: #25D366; color: white;
@@ -31,10 +75,16 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }}
     .whatsapp-fixo img {{ width: 24px; height: 24px; margin-right: 8px; }}
-    footer {{ background: #006400; color: white; text-align: center; padding: 10px 20px; margin-top: 20px; }}
-    @media (max-width: 600px) {{
-      header {{ flex-direction: column; align-items: center; gap: 10px; }}
-      nav {{ justify-content: center; flex-wrap: wrap; }}
+    @media (max-width: 700px) {{
+      header {{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }}
+      nav {{
+        flex-direction: column;
+        gap: 10px;
+      }}
     }}
   </style>
   <script>
@@ -62,6 +112,7 @@
       <a href="contato.html">Contato</a>
     </nav>
   </header>
+
   <div class="container">
 <h1>Serviços de Manutenção</h1>
 <p>A <strong>Castro’Agro</strong> executa manutenção preventiva e corretiva em sistemas <strong>eletroeletrônicos</strong> e automações para <strong>granjas de frango, suínos e leiterias</strong>, com atendimento ágil e técnico especializado.</p>
@@ -95,9 +146,11 @@
   <button class="botao-whats" onclick="enviarWhatsApp()">📲 Enviar Solicitação via WhatsApp</button>
 </div>
 </div>
+
   <a class="whatsapp-fixo" href="https://wa.me/5542988712806" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp"> WhatsApp
   </a>
+
   <footer>
     <p>&copy; 2025 Castro’Agro. Soluções tecnológicas para a pecuária.</p>
   </footer>
